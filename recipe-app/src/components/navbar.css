@@ -1,0 +1,21 @@
+.navbar {
+      display: flex;
+      justify-content: space-around;
+      background-color: #473232;
+      padding: 10px;
+}
+
+.nav-link{
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      font-weight: 100;
+}
+
+.active {
+      color: red;
+      border-bottom: 2px solid red;
+      font-weight: 100;
+}
