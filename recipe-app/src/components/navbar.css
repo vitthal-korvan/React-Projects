@@ -1,7 +1,9 @@
 .navbar {
       display: flex;
-      justify-content: space-around;
-      background-color: #473232;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      background-color: #202020;
       padding: 10px;
 }
 
@@ -15,7 +17,20 @@
 }
 
 .active {
-      color: red;
-      border-bottom: 2px solid red;
-      font-weight: 100;
+      color: #e6b25d;
+      border-bottom: 2px solid #e6b25d;
+      font-weight: 300;
+}
+
+.create-recipe {
+      background-color: #e6b25d;
+      color: #000000;
+      border-radius: 10px;
+      padding: 10px 15px;
+      font-weight: 300;
+}
+
+.create-recipe:hover {
+      background-color: #d4a04c;
+      color: #ffffff;
 }
