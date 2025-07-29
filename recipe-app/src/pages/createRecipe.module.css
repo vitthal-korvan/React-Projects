@@ -20,7 +20,7 @@ small {
       font-weight: 400;
 }
 
-.title, .image {
+.title, .image, .chef {
       padding: 10px;
       font-size: 1.1rem;
       border: none;

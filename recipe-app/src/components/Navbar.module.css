@@ -7,7 +7,7 @@
       padding: 10px;
 }
 
-.nav-link{
+.navLink {
       color: #fff;
       text-decoration: none;
       padding: 10px;
@@ -17,7 +17,10 @@
 }
 
 .active {
+      text-decoration: none;
+      font-size: 1.3rem;
       color: #e6b25d;
+      padding: 5px;
       border-bottom: 2px solid #e6b25d;
       font-weight: 300;
 }

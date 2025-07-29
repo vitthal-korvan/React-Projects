@@ -1,20 +1,15 @@
-import { recipecontext } from "../context/RecipeContext";
 import { useContext } from "react";
-
+import { recipecontext } from "../context/RecipeContext";
+import RecipeCard from "../components/RecipeCard";
+import style from "./Recipe.module.css";
 
 const Recipes = () => {
   const { data } = useContext(recipecontext);
-  const renderrecipes =  data.map((recipe) => (
-    <div key={recipe.id} className="recipe-card">
-      <img src={recipe.image} alt={recipe.title} />
-      <h3>{recipe.title}</h3>
-      <p>{recipe.description}</p>
-      <p>Ingredients: {recipe.ingredients.join(", ")}</p>
-      <p>Instructions: {recipe.instructions.join(", ")}</p>
-    </div>
+  const renderrecipes = data.map((recipe) => (
+    <RecipeCard key={recipe.id} recipe={recipe} />
   ));
 
-  return <div>{renderrecipes}</div>;
+  return <div className={style.mainRecipe}>{data.length>0?renderrecipes:"No Recipe Found!"}</div>;
 };
 
 export default Recipes;
