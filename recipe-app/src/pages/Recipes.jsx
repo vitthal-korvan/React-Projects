@@ -6,6 +6,8 @@ import style from "./Recipe.module.css";
 const Recipes = () => {
   const { data } = useContext(recipecontext);
   const renderrecipes = data.map((recipe) => (
+    console.log(recipe),
+    
     <RecipeCard key={recipe.id} recipe={recipe} />
   ));
 

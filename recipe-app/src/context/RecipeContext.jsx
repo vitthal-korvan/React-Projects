@@ -1,12 +1,11 @@
 import { createContext, useState } from "react";
 
 export const recipecontext = createContext(null);
-import { nanoid } from "nanoid";
 
 const RecipeContext = (props) => {
   const [data, setData] = useState([
     {
-      id: nanoid(),
+      id: 1,
       image:
         "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?cs=srgb&dl=pexels-marvin-ozz-1297854-2474661.jpg&fm=jpg",
       title: "Recipe One",
@@ -16,7 +15,6 @@ const RecipeContext = (props) => {
       category: "breakfast",
     },
   ]);
-
 
   return (
     <div>
