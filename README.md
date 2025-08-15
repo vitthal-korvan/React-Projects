@@ -77,7 +77,6 @@ By completing all these projects, you will:
    ```bash
    cd project-01-counter
 
-
 3. Install dependencies:
    ```bash
    npm install
@@ -85,8 +84,5 @@ By completing all these projects, you will:
 4. Run Project
    ```bash
    npm run dev
-
-6. Run the project:
-npm start
 
 
