@@ -1,0 +1,38 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: gilroy;
+}
+
+html,
+body {
+      height: 100%;
+      width: 100%;
+      background-color: chocolate;
+}
+
+.counter{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+}
+
+.main-counter{
+      display: flex;
+      gap: 30px;
+      background-color: rgb(121, 76, 164);
+}
+
+.main-counter button{
+      padding: .2rem 1rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+}
+
+.main-counter h2{
+      font-size: 2rem;
+}
