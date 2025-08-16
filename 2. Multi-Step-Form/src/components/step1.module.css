@@ -1,0 +1,164 @@
+:root {
+      --Blue-950: hsl(213, 96%, 18%);
+      --Purple-600: hsl(243, 100%, 62%);
+      --Blue-300: hsl(228, 100%, 84%);
+      --Blue-200: hsl(206, 94%, 87%);
+      --Red-500: hsl(354, 84%, 57%) --Grey-500: hsl(231, 11%, 63%);
+      --Purple-200: hsl(229, 24%, 87%);
+      --Blue-100: hsl(218, 100%, 97%);
+      --Blue-50: hsl(231, 100%, 99%);
+      --White: hsl(0, 100%, 100%)
+}
+
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+html,
+body {
+      height: 100%;
+      width: 100%;
+      font-family: "Ubuntu", sans-serif;
+}
+
+.containerParent {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--Blue-200);
+}
+
+.container {
+      display: flex;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      margin: auto;
+}
+
+/* Sidebar */
+.sidebar {
+      background: url("../assets/images/bg-sidebar-desktop.svg");
+      /* background-color: blue; */
+      color: white;
+      padding: 2rem 1.5rem;
+      width: 250px;
+}
+
+.step {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+}
+
+.circle,
+.activeCircle {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-right: 1rem;
+      border: 1px solid white;
+      font-weight: bold;
+}
+
+.circle {
+      background: transparent;
+}
+
+.activeCircle {
+      background: white;
+      color: hsl(243, 100%, 62%);
+}
+
+/* Form */
+.formSection {
+      flex: 1;
+      padding: 2.5rem;
+}
+
+.formSection h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+}
+
+.formSection p {
+      color: gray;
+      margin-bottom: 2rem;
+}
+
+label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 1rem;
+}
+
+input {
+      width: 100%;
+      padding: 0.8rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+}
+
+.errorInput {
+      border: 1px solid red;
+}
+
+.error {
+      display: block;
+      color: red;
+      font-size: 0.85rem;
+      margin-top: -0.3rem;
+      margin-bottom: 1rem;
+}
+
+.nextBtn {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background: hsl(213, 96%, 18%);
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+}
+
+.nextBtn:hover {
+      background: hsl(213, 96%, 25%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+      .containerParent {
+                  
+                  background-color: var(--Blue-200);
+            }
+      .container {
+            flex-direction: column;
+      }
+
+      .sidebar {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            background: url("../assets/images/bg-sidebar-mobile.svg");
+            background-repeat: no-repeat;
+            object-fit: cover;
+            
+      }
+
+      .step p {
+            display: none;
+      }
+} 
